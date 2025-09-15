@@ -1,11 +1,20 @@
 [
-  {
-    "id": "44",
-    "number": "564",
-    "airline_name": "thee",
-    "seats": 6,
-    "price": 5600.0,
-    "source": "thr",
-    "destination": "lonfon"
-  }
+    {
+        "id": "44",
+        "number": "564",
+        "airline_name": "thee",
+        "seats": 6,
+        "price": 5600.0,
+        "source": "thr",
+        "destination": "lonfon"
+    },
+    {
+        "id": 44,
+        "number": "543",
+        "airline_name": "british",
+        "seats": 22,
+        "price": 36000.0,
+        "source": "london",
+        "destination": "india"
+    }
 ]

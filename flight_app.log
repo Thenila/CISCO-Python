@@ -1,0 +1,17 @@
+2025-09-15 11:40:11,072 [INFO] BEGIN (implicit)
+2025-09-15 11:40:11,073 [INFO] PRAGMA main.table_info("flights")
+2025-09-15 11:40:11,073 [INFO] [raw sql] ()
+2025-09-15 11:40:11,074 [INFO] COMMIT
+2025-09-15 11:40:39,529 [INFO] BEGIN (implicit)
+2025-09-15 11:40:39,536 [INFO] INSERT INTO flights (id, airline, destination, price, available) VALUES (?, ?, ?, ?, ?)
+2025-09-15 11:40:39,536 [INFO] [generated in 0.00522s] (22, 'indigo', 'india', 2000000.0, 1)
+2025-09-15 11:40:39,538 [INFO] COMMIT
+2025-09-15 11:40:39,542 [INFO] Flight created: {'id': 22, 'airline': 'indigo', 'destination': 'india', 'price': 2000000.0, 'available': True}
+2025-09-15 11:40:41,987 [INFO] BEGIN (implicit)
+2025-09-15 11:40:41,988 [INFO] SELECT flights.id AS flights_id, flights.airline AS flights_airline, flights.destination AS flights_destination, flights.price AS flights_price, flights.available AS flights_available 
+FROM flights
+2025-09-15 11:40:41,989 [INFO] [generated in 0.00028s] ()
+2025-09-15 11:41:02,065 [INFO] INSERT INTO flights (id, airline, destination, price, available) VALUES (?, ?, ?, ?, ?)
+2025-09-15 11:41:02,066 [INFO] [cached since 22.54s ago] (33, 'the', 'london', 333333.0, 1)
+2025-09-15 11:41:02,067 [INFO] COMMIT
+2025-09-15 11:41:02,070 [INFO] Flight created: {'id': 33, 'airline': 'the', 'destination': 'london', 'price': 333333.0, 'available': True}
