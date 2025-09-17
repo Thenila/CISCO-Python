@@ -2,7 +2,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from threading import Thread
-from app.config import config
+from .config import config
 
 def send_email(subject, body, to_email):
     """Send email synchronously"""
