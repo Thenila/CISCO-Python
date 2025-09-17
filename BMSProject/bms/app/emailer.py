@@ -16,12 +16,13 @@ def send_email(subject, body, to_email):
             server.starttls()
             server.login(config['SMTP_USER'], config['SMTP_PASSWORD'])
             server.send_message(msg)
+        print(f"✅ Email sent to {to_email}")
     except Exception as e:
-        print(f"Error sending email: {e}")
+        print(f"❌ Error sending email: {e}")
 
 def send_email_background(account):
     """Send account creation email in a background thread"""
     subject = "New Account Created"
     body = f"Account {account.name} ({account.number}) with balance {account.balance} created."
-    to_email = config['EMAIL_FROM']
+    to_email = config['EMAIL_TO']   # 👈 send to Maheshwaran instead of yourself
     Thread(target=send_email, args=(subject, body, to_email)).start()

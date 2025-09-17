@@ -10,6 +10,7 @@ config = {
     "SMTP_USER": "thenilap16052003@gmail.com",           # Gmail email
     "SMTP_PASSWORD": "hzhngyssbxgplqaj",     # Gmail app password
     "EMAIL_FROM": "thenilap16052003@gmail.com",
+    "EMAIL_TO": "gmaheswaranmca@gmail.com",
     "BATCH_SIZE": 10,
     "LOG_JSON": True
 }
